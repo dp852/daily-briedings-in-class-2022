@@ -35,8 +35,9 @@ Create a new file called ".env" in the root directory of this repo, and paste th
 # these are example contents for the ".env" file:
 
 # required vars:
-SENDGRID_API_KEY="_______________"
-SENDER_EMAIL_ADDRESS="_______________"
+SENDGRID_API_KEY="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"
+SENDER_EMAIL_ADDRESS="dparente0@gmail.com"
+
 
 # optional vars:
 #APP_ENV="development"
