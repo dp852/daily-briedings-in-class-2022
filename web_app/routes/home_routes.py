@@ -21,3 +21,16 @@ def about():
 def another():
     print("Here is another page"),
     return "Here is another page"
+
+
+@home_routes.route("/hello")
+def hello_world():
+    print("HELLO...", dict(request.args))
+   
+   #Go check url params for one called "name" and use it if possible, otherwise use a default value
+   #If no name parameter is specified, use a default value
+    name = request.args.get("name") or "World"
+   
+    message = f"Hello, {name}!"
+    return message
+
