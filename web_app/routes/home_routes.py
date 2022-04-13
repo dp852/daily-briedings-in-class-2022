@@ -8,13 +8,13 @@ home_routes = Blueprint("home_routes", __name__)
 @home_routes.route("/home")
 def index():
     print("HOME...")
-    return "Welcome Home"
+    #return "Welcome Home"
     return render_template("home.html")
 
 @home_routes.route("/about")
 def about():
     print("ABOUT...")
-    return "About Me"
+    #return "About Me"
     return render_template("about.html")
 
 @home_routes.route("/another")
@@ -32,5 +32,6 @@ def hello_world():
     name = request.args.get("name") or "World"
    
     message = f"Hello, {name}!"
-    return message
+    #return message
+    return render_template("hello.html")
 
